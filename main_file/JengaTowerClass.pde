@@ -66,7 +66,6 @@ class JengaTower {
     }
     
     void letsGetPhyiscal() {
-        println("New Run!");
         // Calculates whether or not the tower should collapse, each time a block is removed or placed.
         // Creates and populates an array called structure representing the layout of the tower,
         // using 1's and 0s to represent empty and occupied sections, respectively.
@@ -83,10 +82,6 @@ class JengaTower {
         // pivot point in question. If the lean in any direction is too great, the tower collapses, else does nothing.
         for (int pivot = structure.length - 1; pivot >= 0; pivot--) {
             int pivotStructure = unbinary(str(structure[pivot][0]) + str(structure[pivot][(pivot % 2 == 1 ? 1 : 3)]) + str(structure[pivot][(pivot % 2 == 1 ? 2 : 6)]));
-            println("===========================================================");
-            println("Pivot No: " + pivot);
-            println(str(structure[pivot][0]) + str(structure[pivot][(pivot % 2 == 1 ? 1 : 3)]) + str(structure[pivot][(pivot % 2 == 1 ? 2 : 6)]));
-            println("Pivot Structure:" + pivotStructure);
             if (pivotStructure == 1 || pivotStructure == 2 || pivotStructure == 3 || pivotStructure == 4 || pivotStructure == 6) {
                 int[] weightDistribution = new int [9];
                 for (int row = pivot + 1; row < int(towerSize.y); row++) {
@@ -98,7 +93,6 @@ class JengaTower {
                 for (int weight: weightDistribution) {
                     lean += weight;
                 }
-                println("Lean: " + lean);
                 if (lean > (pivotStructure == 3 || pivotStructure == 6 ? -1000 : -3) && lean < 3) {
                     continue;
                 } else {
