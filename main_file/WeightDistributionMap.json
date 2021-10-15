@@ -31,5 +31,27 @@
     "section6Weight": [ 2, 0 ],
     "section7Weight": [ 2, 1 ],
     "section8Weight": [ 2, 2 ]
+  },
+  "RowConfig3": {
+    "section0Weight": [ 1, -1 ],
+    "section1Weight": [ 1, 0 ],
+    "section2Weight": [ 1, 1 ],
+    "section3Weight": [ 0, -1 ],
+    "section4Weight": [ 0, 0 ],
+    "section5Weight": [ 0, 1 ],
+    "section6Weight": [ -1, -1 ],
+    "section7Weight": [ -1, 0 ],
+    "section8Weight": [ -1, 1 ]
+  },
+  "RowConfig6": {
+    "section0Weight": [ -1, 1 ],
+    "section1Weight": [ -1, 0 ],
+    "section2Weight": [ -1, -1 ],
+    "section3Weight": [ 0, 1 ],
+    "section4Weight": [ 0, 0 ],
+    "section5Weight": [ 0, -1 ],
+    "section6Weight": [ 1, 1 ],
+    "section7Weight": [ 1, 0 ],
+    "section8Weight": [ 1, -1 ]
   }
 }
